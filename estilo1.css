@@ -1,0 +1,225 @@
+/* Configuraciones generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NavegaciÃ³n Principal */
+.principal {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column; /* pone tÃ­tulo arriba y menÃº abajo */
+    justify-content: center;
+    align-items: center; /* centra todo */
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.principal h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #00d1b2; /* Color tecnolÃ³gico */
+}
+
+.principal ul {
+    list-style: none;
+    display: flex;
+}
+
+.principal ul li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.principal ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.principal ul li a:hover {
+    color: #00d1b2;
+}
+
+/* SubmenÃº */
+.submenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c2c2c;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+/* Contenedor Padre, Hijo y Nieto */
+.padre {
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.hijo {
+    background: white;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.nieto {
+    padding: 40px;
+    text-align: center;
+}
+
+.nieto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.nieto img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.nieto img:hover {
+    transform: scale(1.02);
+}
+
+.nieto p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00d1b2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Estilo del texto informativo */
+.nieto ul {
+    list-style: none;
+    text-align: justify;
+    color: #555;
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #00d1b2;
+}
+.pie {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.pie .redes {
+    margin-top: 10px;
+}
+
+.pie .redes a {
+    color: #00d1b2;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pie .redes a:hover {
+    color: white;
+}
+/* CATÃLOGO */
+.catalogo {
+    padding: 40px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.producto h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    color: #00d1b2;
+    font-weight: bold;
+}
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-contenido {
+    background: white;
+    width: 60%;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cerrar {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+.submenu ul li a {
+    display: block;
+    padding: 10px;
+}

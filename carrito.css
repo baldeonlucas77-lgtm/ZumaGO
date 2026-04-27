@@ -1,0 +1,160 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+}
+
+/* NAVBAR */
+
+.principal {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.principal h1 {
+    font-size: 30px;
+    color: #00d1b2;
+}
+
+.principal ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.principal a:hover {
+    color: #00d1b2;
+}
+
+/* CARRITO */
+
+.carrito {
+    padding: 60px;
+}
+
+.carrito h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.contenedor-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* PRODUCTO */
+
+.producto-carrito {
+    background: white;
+    width: 600px;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+.producto-carrito img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+.info h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.precio {
+    font-size: 28px;
+    color: #00a86b;
+    font-weight: bold;
+}
+
+/* RESUMEN */
+
+.resumen {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+.resumen h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.resumen p {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.total {
+    color: #00a86b;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #00a86b;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008f5a;
+}
+
+/* FOOTER */
+
+.pie {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.contacto {
+    margin-top: 20px;
+}
+
+.contacto p {
+    margin: 8px 0;
+}

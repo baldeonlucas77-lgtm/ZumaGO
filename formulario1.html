@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Mantenimiento - ZumaGO</title>
+    <link rel="stylesheet" href="estilof1.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h2>Formulario de Mantenimiento</h2>
+
+        <form action="https://formsubmit.co/eftol280473@gmail.com" method="post">
+
+            <!-- Nombre -->
+            <div class="grupo">
+                <label for="nombre">Nombre del cliente:</label>
+                <input 
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese sus nombres completos"
+                    required>
+            </div>
+
+            <!-- Correo -->
+            <div class="grupo">
+                <label for="correo">Correo electrónico:</label>
+                <input 
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Ingrese su correo electrónico"
+                    required>
+            </div>
+
+            <!-- Dirección -->
+            <div class="grupo">
+                <label for="direccion">Dirección de entrega:</label>
+                <input 
+                    type="text"
+                    id="direccion"
+                    name="direccion"
+                    placeholder="Calle, número y ciudad"
+                    required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="grupo">
+                <label for="telefono">Teléfono:</label>
+                <input 
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ejemplo: +51 999 999 999"
+                    required>
+            </div>
+
+            <!-- Modelo -->
+            <div class="grupo">
+                <label for="modelo">Seleccionar su modelo de ZumaGO:</label>
+                <select 
+                    id="modelo"
+                    name="modelo"
+                    required>
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="ZumaGO Urban X">ZumaGO Urban X</option>
+                    <option value="ZumaGO Speed Pro">ZumaGO Speed Pro</option>
+                    <option value="ZumaGO EcoRide">ZumaGO EcoRide</option>
+                    <option value="ZumaGO Max Power">ZumaGO Max Power</option>
+                    <option value="ZumaGO Lite">ZumaGO Lite</option>
+
+                </select>
+            </div>
+
+            <!-- Reparaciones -->
+            <div class="grupo">
+                <label for="servicio">Seleccionar cambios o reparaciones:</label>
+                <select 
+                    id="servicio"
+                    name="servicio"
+                    required>
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="Ajuste de holgura en el mástil">Ajuste de holgura en el mástil</option>
+                    <option value="Actualización de software / diagnóstico">Actualización de software / diagnóstico</option>
+                    <option value="Cambio de neumáticos">Cambio de neumáticos</option>
+                    <option value="Problemas de carga / batería">Problemas de carga / batería</option>
+                    <option value="Ajuste / mantenimiento de frenos">Ajuste / mantenimiento de frenos</option>
+
+                </select>
+            </div>
+
+            <!-- Observaciones -->
+            <div class="grupo">
+                <label for="observaciones">Observaciones adicionales:</label>
+                <textarea
+                    id="observaciones"
+                    name="observaciones"
+                    placeholder="Ingrese su consulta de mantenimiento si no encuentra una opción disponible"
+                    rows="6"></textarea>
+            </div>
+
+            <!-- Botón -->
+            <button type="submit">
+                Enviar Requerimiento
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

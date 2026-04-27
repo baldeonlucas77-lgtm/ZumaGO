@@ -1,0 +1,110 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* CENTRADO TOTAL */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    /* TODO CENTRADO */
+    text-align: center;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+/* TITULO */
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* GRUPOS */
+
+.grupo {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* INPUTS */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+/* FOCUS */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00d1b2;
+    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.1);
+}
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+    background-color: #00d1b2;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00b89c;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+    .contenedor {
+        margin: 15px;
+        padding: 25px;
+    }
+}
